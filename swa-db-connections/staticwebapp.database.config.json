@@ -30,7 +30,7 @@
     }
   },
   "entities": {
-    "Person": {
+    "Post": {
       "source": "dbo.Posts",
       "permissions": [
         {
