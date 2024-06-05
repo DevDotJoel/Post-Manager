@@ -2,7 +2,8 @@
 export async function load({ fetch, url }: any) {
 	console.log(url.href + 'data-api/rest/Post');
 	const response = await fetch(url.href + 'data-api/rest/Post');
-	const persons = await response.json();
+	const data = await response.json();
+	const persons = data.value;
 	return {
 		persons
 	};
